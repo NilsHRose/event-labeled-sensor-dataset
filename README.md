@@ -55,3 +55,5 @@ events_v5_area.xlsx                      master event table
   coverage is complete.
 - Known limitations are documented in the paper and encoded in the data
   (tiers, audit flags, source columns).
+- A pre-built copy of the interactive event map is included at
+  `05_figures/event_map_v5.html` -- download and open it in any browser.
