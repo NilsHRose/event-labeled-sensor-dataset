@@ -210,7 +210,7 @@ def stage_weather():
         print("run us_data first"); return
     for f in files:
         df = pd.read_csv(f)
-        if "temperature" in df.columns:
+        if "temperature_2m" in df.columns:
             print(f"{f.name}: weather already joined"); continue
         stations = df[["site_id", "latitude", "longitude"]].drop_duplicates()
         wmap = {}

@@ -1,6 +1,9 @@
 pandas>=2.0
 openpyxl
 matplotlib
+numpy
+pyarrow
+requests
 basemap
 basemap-data
-numpy
+contextily

@@ -31,7 +31,7 @@ DELAY_BETWEEN = 0.3
 TIMEOUT = 120
 
 # User-Agent so we're identifiable
-USER_AGENT = "WNO-research-download/1.0 (academic; contact: nils.rose@ottawa.edu)"
+USER_AGENT = "research-dataset-download/1.0 (academic)"
 
 
 # --- Helpers --------------------------------------------------------

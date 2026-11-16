@@ -57,3 +57,14 @@ events_v5_area.xlsx                      master event table
   (tiers, audit flags, source columns).
 - A pre-built copy of the interactive event map is included at
   `05_figures/event_map_v5.html` -- download and open it in any browser.
+
+## Reproducibility notes
+
+- Stage 2 builds on a small set of curated event files (the original
+  hand-checked event tables) that are not part of this repository;
+  the released master table `events_v5_area.xlsx` already contains the
+  result, so stages 3-5 run from the release alone.
+- The raw EU download layout changed between versions; see the
+  docstrings of `download_eu_parquets.py` and `convert_eu_v5.py` for
+  the expected folders.
+- Python 3.9+ is required.

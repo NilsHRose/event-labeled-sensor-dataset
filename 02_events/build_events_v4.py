@@ -4,13 +4,14 @@ pull, the EU events and the previous master. The manual decisions
 each) are encoded here so the build is repeatable.
 """
 
+import os
 from pathlib import Path
 import pandas as pd
 
 DESK = Path.home() / "Desktop"
 DL = Path.home() / "Downloads"
-BK = Path.home() / ("Library/CloudStorage/OneDrive-OttawaUniversity/"
-                    "Dateien von Anjum, Usman - New Project/Datasets/Combined/Events")
+# Folder holding the curated EU event backup (events_eu_v2.csv); set via env
+BK = Path(os.environ.get("EVENTS_BACKUP_DIR", Path.home() / "Desktop/EventSources"))
 
 # County centroids for dust-zone coordinate assignment (approx, deg)
 ZONE_CENTROIDS = {
